@@ -3,7 +3,7 @@ package com.imooc.service;
 import com.imooc.bean.Command;
 import com.imooc.bean.CommandContent;
 import com.imooc.bean.Message;
-import com.imooc.dao.ComandDao;
+import com.imooc.dao.CommandDao;
 import com.imooc.dao.MessageDao;
 import com.imooc.util.ConstantMessage;
 
@@ -22,7 +22,7 @@ public class QueryService {
      * 通过指令查询自动回复的内容
      */
     public String queryByCommand(String command){
-        ComandDao comandDao = new ComandDao();
+        CommandDao comandDao = new CommandDao();
         List<Command> commandList;
         if(ConstantMessage.HELP_COMMAND.equals(command)){
             commandList = comandDao.queryCommandList(null,null);
