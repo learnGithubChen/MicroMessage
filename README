@@ -1,2 +1,4 @@
 仿微信公众号交互功能
+大概的交互界面主要有两个，一个list界面，主要用来展示后台的指令，描述信息，一个talk界面。主要展示的是仿微信公众号的互动过程
+![图片](https://github.com/learnGithubChen/MicroMessage/blob/master/web/images/thumbs/talk_recordbox.jpg)
 
