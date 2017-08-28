@@ -34,6 +34,9 @@ public class QueryService {
             }
             return sb.toString();
         }
+        if(ConstantMessage.CHECK_COMMAND.equals(command)){
+            return "快点来追我，追到我我就让你嘿嘿嘿！";
+        }
 
         commandList = comandDao.queryCommandList(command,null);
         if(commandList.size()>0){
